@@ -1,0 +1,183 @@
+$tablet:"screen and (min-width: 768px)";
+$desktop:"screen and (min-width:1000px)";
+
+
+.headline-wrapper-kontakt {
+  margin-top: 50px;
+  margin-bottom: 5rem;
+
+  .headline-kontakt{
+    margin-left: 20px;
+    font-family: "Helvetica Neue";
+  }
+}
+.container-label{
+  margin-left: 20px;
+  width: 80%;
+
+
+  .btn{
+    color: $secondary;
+    font-family: "Helvetica Neue";
+  }
+
+  .form-control{
+    width: 300px;
+  }
+
+}
+
+
+
+
+.lokation{
+  margin-top: 3rem;
+}
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+
+
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:90%;
+  width:90%;
+  position:absolute;
+  padding-left: 20px;
+
+}
+
+
+.contact-wrapper{
+  margin-left: 20px;
+  margin-top: 4rem;
+
+
+  p{
+    font-weight: normal;
+  }
+}
+
+
+@media #{$tablet}{
+
+
+  .container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+  }
+
+  .container-label{
+    margin-left: 20px;
+    width: 80%;
+
+
+    .btn{
+      color: $secondary;
+      font-family: "Helvetica Neue";
+    }
+
+    .form-control{
+      width: 200px;
+    }
+
+  }
+
+
+  .map-responsive {
+    grid-column: 2/3;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+
+  }
+  .map-responsive iframe {
+
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 23px;
+
+  }
+
+  .contact-wrapper{
+
+    margin-top: 22px;
+
+  }
+
+}
+
+@media #{$desktop}{
+
+
+  .headline-wrapper-kontakt {
+    margin-top: 50px;
+    margin-bottom: 5rem;
+
+    .headline-kontakt{
+      margin-left: 70px;
+      font-family: "Helvetica Neue";
+    }
+  }
+
+  .container-label{
+    margin-left: 70px;
+    width: 80%;
+
+
+    .btn{
+      color: $secondary;
+      font-family: "Helvetica Neue";
+    }
+
+    .form-control{
+      width: 300px;
+    }
+
+  }
+
+  .map-responsive {
+    grid-column: 2/3;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+
+  }
+  .map-responsive iframe {
+
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 23px;
+
+  }
+  .contact-wrapper{
+    margin-left: 10px;
+    margin-top: 22px;
+
+
+    p{
+      font-weight: normal;
+    }
+  }
+
+
+}
+
+
